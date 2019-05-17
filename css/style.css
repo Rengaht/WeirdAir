@@ -1,0 +1,100 @@
+body{
+	background:black;
+	color:white;
+	border:0;
+	padding: 40px 60px 40px 60px;
+	margin:0;
+
+	font-family: 'Lato', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.center{
+	display:block;
+	text-align: center;
+	margin: auto;
+}
+
+
+#_header{
+	/*margin-top:40px;
+	margin-right: 60px;
+	margin-left: 60px;*/
+}
+
+.HeaderButton{
+	float:right;
+	width:42px;
+	height:42px;
+	display: inline-block;
+
+}
+#_title{
+	height:28px;
+}
+#_mmlab{
+	background-image: url("../img/mm.png");
+	background-size: contain;	
+	margin-right:30px;
+}
+#_facebook{
+	background-image: url("../img/fb.png");
+	background-size: contain;
+}
+
+#_footer{
+	position: absolute;
+	/*width:100%;*/
+	bottom: 40px;
+	right: 60px;
+	left: 60px;
+
+	opacity: 0.85;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+  	font-weight: 900;
+}
+.footerLeft{
+	float:left;
+	/*margin-left: 60px;*/
+}
+.footerRight{
+	float:right;
+	/*margin-right: 60px;	*/
+}
+
+#_menu{
+	position: absolute;
+	bottom:85px;
+	left:0px;
+	right: 0px;
+}
+.menuIcon{
+	width:65px;
+	height:80px;	
+	
+	margin-left: 29px;
+	margin-right: 29px;
+
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#_menu_sound{
+	background-image: url("../img/menu/sound_default.png");
+}
+#_menu_air{
+	background-image: url("../img/menu/air_default.png");
+}
+#_menu_wheel{
+	background-image: url("../img/menu/wheel_default.png");
+}
+#_menu_fur{
+	background-image: url("../img/menu/fur_default.png");
+}
+#_menu_oil{
+	background-image: url("../img/menu/oil_default.png");
+}
+#_menu_video{
+	background-image: url("../img/menu/video_default.png");
+}

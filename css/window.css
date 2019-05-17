@@ -1,0 +1,61 @@
+
+.window{
+	width:339px;
+}
+.windowHeader{
+	margin-bottom:6px;
+}
+.titleIcon{
+	display: inline-block;
+	height:18px;
+}
+.titleText{
+	display: inline-block;
+	font-size: 16px;
+	letter-spacing:16px;
+	font-weight: bold;
+}
+.closeButton{
+	display: inline-block;
+	float:right;
+	width:21px;
+	height: 18px;
+	background-image: url("../img/window/close_2.png");
+	background-size: contain;
+}
+
+.windowContent{
+	opacity: 0.85;
+  	border-top: solid 1.5px #ffffff;
+  	border-bottom: solid 1.5px #ffffff;
+	
+	padding:15px;
+	
+	font-family: 'Noto Sans TC';
+  	font-size: 14px;
+  	line-height: 1.86;
+  	letter-spacing: 0.5px;
+  	text-align: justify;
+  	
+  	
+}
+.windowText{
+	max-height: 350px;
+  	overflow-y: scroll;
+
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.35);  
+  width: 5px;
+}
