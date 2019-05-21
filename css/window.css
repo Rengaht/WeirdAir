@@ -1,7 +1,20 @@
 
-.window{
+.window{	
+	position: absolute;
+	top:85px;
 	width:339px;
+	opacity: 1;
+	transition: .2s ease-out;
+	display:block;
 }
+.window.hidden{
+	opacity: 0;
+	transition: .2s ease-out;
+}
+.window.close{
+	display:none;
+}
+
 .windowHeader{
 	margin-bottom:6px;
 }
@@ -10,10 +23,18 @@
 	height:18px;
 }
 .titleText{
-	display: inline-block;
+	/*display: inline-block;*/
+	position: absolute;
+	top:0;
+	left:20px;
+	right:20px;
+
 	font-size: 16px;
 	letter-spacing:16px;
 	font-weight: bold;
+}
+.titleTextFunction{
+	letter-spacing:4px;
 }
 .closeButton{
 	display: inline-block;
@@ -25,24 +46,30 @@
 }
 
 .windowContent{
+	position: relative;
 	opacity: 0.85;
   	border-top: solid 1.5px #ffffff;
   	border-bottom: solid 1.5px #ffffff;
 	
-	padding:15px;
+	padding:15px 0px;
 	
 	font-family: 'Noto Sans TC';
   	font-size: 14px;
   	line-height: 1.86;
   	letter-spacing: 0.5px;
-  	text-align: justify;
-  	
-  	
+  	text-align: justify;    	
 }
+.windowContentFunction{
+	border-top: 0px;
+}
+
 .windowText{
 	max-height: 350px;
   	overflow-y: scroll;
-
+  	padding:0px 15px;
+}
+.windowText.bold{
+	font-weight: bold;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -58,4 +85,81 @@
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.35);  
   width: 5px;
+}
+
+
+.windowImage{
+	position: relative;
+	padding: 6px;
+	opacity: 0.85;
+	border: solid 1.5px #ffffff;
+}
+.windowImage>img,.windowImage>video{
+	width:100%;
+	/*height:100%;*/
+	outline: none;
+}
+
+.deco{
+    display: block;
+    width: 1.5px;
+    height: 14px;
+    background: #fff;
+    position: absolute;
+}
+.sdeco:nth-of-type(1){
+    left: 0;
+    top: 0;
+    transform-origin: 0 0;
+    transform: rotate(135deg);
+}
+.sdeco:nth-of-type(2){
+    right: 0;
+    top: 0;
+    transform-origin: right 0;
+    transform: rotate(-135deg);
+}
+.sdeco:nth-of-type(3){
+    left: 0;
+    bottom: 0;
+    transform-origin: 0 bottom;
+    transform: rotate(-135deg);
+}
+.sdeco:nth-of-type(4){
+    right: 0;
+    bottom: 0;
+    transform-origin: right bottom;
+    transform: rotate(135deg);
+}
+
+.vdeco:nth-of-type(1){
+    left: 0;
+    bottom: -7px;    
+}
+.vdeco:nth-of-type(2){
+    right: 0;
+    bottom: -7px;    
+}
+
+
+#_window_info{
+	top:354px;
+	left:105px;
+}
+#_window_wheel{
+	top:150px;
+	left:115px;
+}
+#_window_fur{
+	top:578px;
+	left:115px;
+}
+#_window_air{
+	top:118px;
+	right:118px;
+}
+
+#_window_video{
+	top:626px;
+	right:118px;
 }

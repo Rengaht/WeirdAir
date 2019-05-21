@@ -2,8 +2,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="shortcut icon" href="favicon.ico"/>
-  	<link rel="bookmark" href="favicon.ico"/>
+	<link rel="shortcut icon" href="img/favicon.ico"/>
+  	<link rel="bookmark" href="img/favicon.ico"/>
 
 	<title>空氣怪乖der~怪</title>
  	
@@ -19,12 +19,206 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/window.css">
 
+	<script src="src/jquery-3.3.1.min.js"> </script>
 	
+	<script src='src/spritespin.js' type='text/javascript'></script>
     <script src="js/page.js"></script>
 
 </head>
 
 <body>
+	
+	
+	
+	<div id="_model">		
+		<div class="backImage center">
+			<div id="_spin_image" class="center"></div>
+		</div>	
+
+		<div class="menuIcon" id="_menu_info" onClick="onMenuClick(6)"></div>
+
+		<div id="_window_info" class="window">
+			<div class="windowHeader">
+				<img class="titleIcon" src="img/window/master.png"/>
+				<div class="titleText">
+					<div class="center">空氣怪</div>
+				</div>
+				<div class="closeButton" onClick="onCloseClick(6)"></div>
+			</div>
+			<div class="windowContent">
+				<div class="windowText">
+				你好～ 我是剛被【梅林鬍子實驗室】發明出來的寵物【空氣怪乖der～怪】，相信我的出現，可以解決大家共同的煩惱！<br><br> 
+				平常啊...我都在冬眠，但是我有"感知高頻噪音"的超能力，只要讓我聼到尖叫聲，我就會出動哦～ <br><br> 
+				大家都説我是吃空氣長大的，係金A哦！我搭載了"空氣炮裝置"，厚實的雙唇可以噴發抒壓烟圈， 甜甜的，圓圓的，香香的，充滿迷幻的香氛～ <br><br> 
+				"雙輪驅動底座"更讓我可以自由來去，化解尷尬的氣氛，賣萌裝可愛，來融化大家的心，很多小朋友看到我都會主動成爲我的跟屁蟲腦粉:) <br><br> 
+				我【空氣怪乖der~怪】就是咖啡廳、飛機上... 公共空間緩和氣氛的最佳萌寵！
+				</div>
+			</div>
+		</div>
+	
+		<div id="_window_wheel" class="window close">
+			<div class="windowHeader">
+				<img class="titleIcon" src="img/window/wheel.png"/>
+				<div class="titleText titleTextFunction">
+					<div class="center">雙輪驅動底座</div>
+				</div>
+				<div class="closeButton" onClick="onCloseClick(2)"></div>
+			</div>
+			<div class="windowImage">				
+				<img src="img/wheel.gif"/>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+			</div>
+			<div class="windowContent windowContentFunction">			
+				<div class="windowText Bold">
+					關於雙軸驅動底座				
+				</div>
+				<div class="windowText">
+					利用速差進行轉彎，雙輪前進，空氣怪愛去哪裡就去哪裡。
+				</div>
+				<span class="deco vdeco"></span>
+				<span class="deco vdeco"></span>
+			</div>
+		</div>
+		<div id="_window_fur" class="window close">
+			<div class="windowHeader">
+				<img class="titleIcon" src="img/window/fur.png"/>
+				<div class="titleText titleTextFunction">
+					<div class="center">超紓壓湖水藍絨毛</div>
+				</div>
+				<div class="closeButton" onClick="onCloseClick(3)"></div>
+			</div>
+			<div class="windowImage">				
+				<video id="_video_fur" controls>
+					<source src="video/fur.mp4" type="video/mp4">
+				</video>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+			</div>
+			<div class="windowContent windowContentFunction">			
+				<div class="windowText Bold">
+					關於湖水藍絨毛				
+				</div>
+				<div class="windowText">
+					空氣怪的外觀具有蓬鬆柔軟的湖水藍絨毛，除了吸睛外，更具有超抒壓療癒力，摸一把的輕柔帶你飄飄入雲端。
+				</div>
+				<span class="deco vdeco"></span>
+				<span class="deco vdeco"></span>
+			</div>
+		</div>
+		<div id="_window_air" class="window close">
+			<div class="windowHeader">
+				<img class="titleIcon" src="img/window/air.png"/>
+				<div class="titleText titleTextFunction">
+					<div class="center">空氣砲</div>
+				</div>
+				<div class="closeButton" onClick="onCloseClick(1)"></div>
+			</div>
+			<div class="windowImage">				
+				<video id="_video_air" controls>
+					<source src="video/air.mp4" type="video/mp4">
+				</video>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+			</div>
+			<div class="windowContent windowContentFunction">			
+				<div class="windowText Bold">
+					關於空氣砲				
+				</div>
+				<div class="windowText">				
+					在緊張的氣氛中化解尷尬的特殊功能，空氣炮將香氣精油罐中的客制化香氛進行燃燒氣化，並在炮筒中使氣體加壓噴出，形成超自然煙圈，從空氣怪橘色的小嘴噴出，如同甜甜圈般可愛迷人，讓人好想吃一口。
+				</div>
+				<span class="deco vdeco"></span>
+				<span class="deco vdeco"></span>
+			</div>
+		</div>
+		<div id="_window_video" class="window close">
+			<div class="windowHeader">
+				<img class="titleIcon" src="img/window/video.png"/>
+				<div class="titleText titleTextFunction">
+					<div class="center">實測影片</div>
+				</div>
+				<div class="closeButton" onClick="onCloseClick(5)"></div>
+			</div>
+			<div class="windowImage">				
+				<video id="_video_video" controls>
+					<source src="video/video.mp4" type="video/mp4">
+				</video>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+			</div>
+			<div class="windowContent windowContentFunction">			
+				<div class="windowText Bold">
+					關於實測影片				
+				</div>
+				<div class="windowText">					
+					小朋友的快樂好夥伴。
+				</div>
+				<span class="deco vdeco"></span>
+				<span class="deco vdeco"></span>
+			</div>
+		</div>
+		<div id="_window_sound" class="window close">
+			<div class="windowHeader">
+				<img class="titleIcon" src="img/window/sound.png"/>
+				<div class="titleText titleTextFunction">
+					<div class="center">聲音感測</div>
+				</div>
+				<div class="closeButton" onClick="onCloseClick(0)"></div>
+			</div>
+			<div class="windowImage">				
+				<img src="img/sound.gif"/>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+			</div>
+			<div class="windowContent windowContentFunction">			
+				<div class="windowText Bold">
+					關於聲音感測				
+				</div>
+				<div class="windowText">
+					當偵測到環境中超過80分貝的尖銳噪音時，啟動空氣怪緩和氣氛的特殊感測機制。
+				</div>
+				<span class="deco vdeco"></span>
+				<span class="deco vdeco"></span>
+			</div>
+		</div>
+		<div id="_window_oil" class="window close">
+			<div class="windowHeader">
+				<img class="titleIcon" src="img/window/oil.png"/>
+				<div class="titleText titleTextFunction">
+					<div class="center">香氣精油罐</div>
+				</div>
+				<div class="closeButton" onClick="onCloseClick(4)"></div>
+			</div>
+			<div class="windowImage">				
+				<img src="img/oil.png"/>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+			</div>
+			<div class="windowContent windowContentFunction">			
+				<div class="windowText Bold">
+					關於香氣精油罐			
+				</div>
+				<div class="windowText">
+					拆開空氣怪的屁股，可以隨心所欲替換香氣精油罐中的香味，喜歡什麼就換什麼香味！
+				</div>
+				<span class="deco vdeco"></span>
+				<span class="deco vdeco"></span>
+			</div>
+		</div>
+	</div>
 	<div id="_header">
 		<img src="img/title.png" id="_title"></img>
 		<a href="https://www.facebook.com/merlin.mustache" target="_blank">
@@ -37,32 +231,17 @@
 	</div>
 	<div id="_menu">
 		<div class="center">
-			<div class="menuIcon" id="_menu_sound"></div>
-			<div class="menuIcon" id="_menu_air"></div>
-			<div class="menuIcon" id="_menu_wheel"></div>
-			<div class="menuIcon" id="_menu_fur"></div>
-			<div class="menuIcon" id="_menu_oil"></div>
-			<div class="menuIcon" id="_menu_video"></div>
+			<div class="menuIcon" id="_menu_sound" onClick="onMenuClick(0)"></div>
+			<div class="menuIcon" id="_menu_air" onClick="onMenuClick(1)"></div>
+			<div class="menuIcon" id="_menu_wheel" onClick="onMenuClick(2)"></div>
+			<div class="menuIcon" id="_menu_fur" onClick="onMenuClick(3)"></div>
+			<div class="menuIcon" id="_menu_oil" onClick="onMenuClick(4)"></div>
+			<div class="menuIcon" id="_menu_video" onClick="onMenuClick(5)"></div>
 		</div>
 	</div>
+	
 
-
-	<div id="_window_info" class="window">
-		<div class="windowHeader">
-			<img class="titleIcon" src="img/window/master.png"/>
-			<div class="titleText center">空氣怪</div>
-			<div class="closeButton"></div>
-		</div>
-		<div class="windowContent">
-			<div class="windowText">
-			你好～ 我是剛被【梅林鬍子實驗室】發明出來的寵物【空氣怪乖der～怪】，相信我的出現，可以解決大家共同的煩惱！<br><br> 
-			平常啊...我都在冬眠，但是我有"感知高頻噪音"的超能力，只要讓我聼到尖叫聲，我就會出動哦～ <br><br> 
-			大家都説我是吃空氣長大的，係金A哦！我搭載了"空氣炮裝置"，厚實的雙唇可以噴發抒壓烟圈， 甜甜的，圓圓的，香香的，充滿迷幻的香氛～ <br><br> 
-			"雙輪驅動底座"更讓我可以自由來去，化解尷尬的氣氛，賣萌裝可愛，來融化大家的心，很多小朋友看到我都會主動成爲我的跟屁蟲腦粉:) <br><br> 
-			我【空氣怪乖der~怪】就是咖啡廳、飛機上... 公共空間緩和氣氛的最佳萌寵！
-			</div>
-		</div>
-	</div>
+	
 
 	<div id="_footer">
 		<div class="footerLeft">MMLAB</div>
@@ -70,5 +249,18 @@
 	</div>
 	
 </body>
-
+	<script type='text/javascript'>
+		var src_=[];
+		for(var i=0;i<427;++i) src_.push('video/BG/BG'+leftPad(i,3)+'.jpg')
+		$('#_spin_image').spritespin({
+			source:src_,			
+			animate: true,
+			sizeMode:'fill',
+			responsive:true,
+		    plugins: [
+		      '360',
+		      'drag'
+		    ]
+		});
+	</script>
 </html>

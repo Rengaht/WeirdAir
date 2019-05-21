@@ -20,12 +20,16 @@ body{
 	/*margin-top:40px;
 	margin-right: 60px;
 	margin-left: 60px;*/
+	position: absolute;
+	left: 60px;
+	right: 60px;
+
 }
 
 .HeaderButton{
 	float:right;
-	width:42px;
-	height:42px;
+	width:26px;
+	height:26px;
 	display: inline-block;
 
 }
@@ -69,6 +73,17 @@ body{
 	left:0px;
 	right: 0px;
 }
+
+
+#_model{
+	/*background: red;*/
+	position: absolute;
+	top:0px;
+	bottom: 0px;
+	left:0px;
+	right: 0px
+}
+
 .menuIcon{
 	width:65px;
 	height:80px;	
@@ -79,6 +94,16 @@ body{
 	display: inline-block;
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+#_menu_info{
+	position: absolute;
+	
+	top:94px;
+	left:614px;
+
+	width:38px;
+	height:38px;
+	background-image: url("../img/info.png");
 }
 #_menu_sound{
 	background-image: url("../img/menu/sound_default.png");
@@ -97,4 +122,15 @@ body{
 }
 #_menu_video{
 	background-image: url("../img/menu/video_default.png");
+}
+
+.backImage{
+	position: absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.backImage>div,.backImage>img{
+	width:100%;
+	height:100%;
 }
