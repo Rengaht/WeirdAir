@@ -15,9 +15,10 @@
 		var mobile_detect=new MobileDetect(window.navigator.userAgent);
     	let _mobile=(mobile_detect.mobile()!=null);
     </script>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 	<link rel="stylesheet" type="text/css" href="css/window.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<script src="src/jquery-3.3.1.min.js"> </script>
 	
@@ -36,8 +37,9 @@
 		</div>	
 
 		<div class="menuIcon" id="_menu_info" onClick="onMenuClick(6)"></div>
-
-		<div id="_window_info" class="window">
+		
+		<div id="_left_window">		
+		<div id="_window_info" class="window windowCenter">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/master.png"/>
 				<div class="titleText">
@@ -55,7 +57,6 @@
 				</div>
 			</div>
 		</div>
-	
 		<div id="_window_wheel" class="window close">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/wheel.png"/>
@@ -110,6 +111,38 @@
 				<span class="deco vdeco"></span>
 			</div>
 		</div>
+		<div id="_window_sound" class="window close windowCenter">
+			<div class="windowHeader">
+				<img class="titleIcon" src="img/window/sound.png"/>
+				<div class="titleText titleTextFunction">
+					<div class="center">聲音感測</div>
+				</div>
+				<div class="closeButton" onClick="onCloseClick(0)"></div>
+			</div>
+			<div class="windowImage">				
+				<img src="img/sound.gif"/>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+			</div>
+			<div class="windowContent windowContentFunction">			
+				<div class="windowText Bold">
+					關於聲音感測				
+				</div>
+				<div class="windowText">
+					當偵測到環境中超過80分貝的尖銳噪音時，啟動空氣怪緩和氣氛的特殊感測機制。
+				</div>
+				<span class="deco vdeco"></span>
+				<span class="deco vdeco"></span>
+			</div>
+		</div>
+	
+		</div>
+
+		<div id="_right_window">
+
+		
 		<div id="_window_air" class="window close">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/air.png"/>
@@ -166,33 +199,8 @@
 				<span class="deco vdeco"></span>
 			</div>
 		</div>
-		<div id="_window_sound" class="window close">
-			<div class="windowHeader">
-				<img class="titleIcon" src="img/window/sound.png"/>
-				<div class="titleText titleTextFunction">
-					<div class="center">聲音感測</div>
-				</div>
-				<div class="closeButton" onClick="onCloseClick(0)"></div>
-			</div>
-			<div class="windowImage">				
-				<img src="img/sound.gif"/>
-				<span class="deco sdeco"></span>
-				<span class="deco sdeco"></span>
-				<span class="deco sdeco"></span>
-				<span class="deco sdeco"></span>
-			</div>
-			<div class="windowContent windowContentFunction">			
-				<div class="windowText Bold">
-					關於聲音感測				
-				</div>
-				<div class="windowText">
-					當偵測到環境中超過80分貝的尖銳噪音時，啟動空氣怪緩和氣氛的特殊感測機制。
-				</div>
-				<span class="deco vdeco"></span>
-				<span class="deco vdeco"></span>
-			</div>
-		</div>
-		<div id="_window_oil" class="window close">
+		
+		<div id="_window_oil" class="window close windowCenter">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/oil.png"/>
 				<div class="titleText titleTextFunction">
@@ -217,6 +225,8 @@
 				<span class="deco vdeco"></span>
 				<span class="deco vdeco"></span>
 			</div>
+		</div>		
+		
 		</div>
 	</div>
 	<div id="_header">
@@ -247,20 +257,10 @@
 		<div class="footerLeft">MMLAB</div>
 		<div class="footerRight">mmlab.com.tw</div>
 	</div>
+
+	<div id="_loading">
+		Loading...
+	</div>
 	
 </body>
-	<script type='text/javascript'>
-		var src_=[];
-		for(var i=0;i<427;++i) src_.push('video/BG/BG'+leftPad(i,3)+'.jpg')
-		$('#_spin_image').spritespin({
-			source:src_,			
-			animate: true,
-			sizeMode:'fill',
-			responsive:true,
-		    plugins: [
-		      '360',
-		      'drag'
-		    ]
-		});
-	</script>
 </html>

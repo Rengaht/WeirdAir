@@ -1,0 +1,43 @@
+#_menu_sound{
+	background-image: url("../img/menu/sound_default.png");
+
+}
+#_menu_sound.active{
+	background-image: url("../img/menu/sound_focus.png");	
+}
+
+#_menu_air{
+	background-image: url("../img/menu/air_default.png");
+}
+#_menu_air.active{
+	background-image: url("../img/menu/air_focus.png");
+}
+
+#_menu_wheel{
+	background-image: url("../img/menu/wheel_default.png");
+}
+#_menu_wheel.active{
+	background-image: url("../img/menu/wheel_focus.png");
+}
+
+
+#_menu_fur{
+	background-image: url("../img/menu/fur_default.png");
+}
+#_menu_fur.active{
+	background-image: url("../img/menu/fur_focus.png");
+}
+
+#_menu_oil{
+	background-image: url("../img/menu/oil_default.png");
+}
+#_menu_oil.active{
+	background-image: url("../img/menu/oil_focus.png");
+}
+
+#_menu_video{
+	background-image: url("../img/menu/video_default.png");
+}
+#_menu_video.active{
+	background-image: url("../img/menu/video_focus.png");
+}

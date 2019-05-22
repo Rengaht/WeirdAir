@@ -1,18 +1,34 @@
+#_left_window{
+	position: absolute;
+	top:85px;
+	bottom: 85px;
+	left:60px;
+	width:30%;
+	max-width: 350px;
+}
+#_right_window{
+	position: absolute;	
+	top:85px;
+	bottom: 85px;
+	right:60px;
+	width:30%;
+	max-width: 350px;
+}
 
 .window{	
 	position: absolute;
-	top:85px;
-	width:339px;
+	/*top:85px;*/
+	max-width:350px;
 	opacity: 1;
 	transition: .2s ease-out;
 	display:block;
+	margin-bottom: 30px;
 }
-.window.hidden{
-	opacity: 0;
-	transition: .2s ease-out;
-}
-.window.close{
-	display:none;
+.windowCenter{
+	position: absolute;
+	top:50%;
+	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
 }
 
 .windowHeader{
@@ -43,6 +59,8 @@
 	height: 18px;
 	background-image: url("../img/window/close_2.png");
 	background-size: contain;
+
+	cursor: pointer;
 }
 
 .windowContent{
@@ -142,24 +160,25 @@
 }
 
 
-#_window_info{
-	top:354px;
-	left:105px;
+/*#_window_info{
+	left:115px;
 }
 #_window_wheel{
-	top:150px;
 	left:115px;
 }
 #_window_fur{
-	top:578px;
 	left:115px;
 }
-#_window_air{
-	top:118px;
-	right:118px;
+#_window_sound{
+	left:115px;
 }
 
-#_window_video{
-	top:626px;
-	right:118px;
+#_window_air{
+	right:115px;
 }
+#_window_video{
+	right:115px;
+}
+#_window_oil{
+	right:115px;
+}*/
