@@ -30,7 +30,9 @@ function setupWindowLayout(){
 	if($('#_window_wheel').outerHeight()+$('#_window_fur').outerHeight()>height_max){
 		_show_two_left=false
 		$('#_window_wheel').addClass('windowCenter');
+		$('#_window_wheel').css('top','');	
 		$('#_window_fur').addClass('windowCenter');
+		$('#_window_fur').css('bottom','');
 	}else{
 		_show_two_left=true;
 		
@@ -45,7 +47,10 @@ function setupWindowLayout(){
 		_show_two_right=false;
 
 		$('#_window_air').addClass('windowCenter');
+		$('#_window_air').css('top','');
+
 		$('#_window_video').addClass('windowCenter');
+		$('#_window_video').css('bottom','');	
 	}else{
 		
 		_show_two_right=true;
@@ -157,26 +162,31 @@ function openMenu(i){
 			$('#_window_sound').removeClass('close');			
 			$('#_window_sound').removeClass('hidden');			
 			$('#_menu_sound').addClass('active');
+			$('#_spin_sound').addClass('active');
 			break;
 		case 1:
 			$('#_window_air').removeClass('close');
 			$('#_window_air').removeClass('hidden');
 			$('#_menu_air').addClass('active');
+			$('#_spin_air').addClass('active');
 			break;
 		case 2:
 			$('#_window_wheel').removeClass('close');
 			$('#_window_wheel').removeClass('hidden');			
 			$('#_menu_wheel').addClass('active');
+			$('#_spin_wheel').addClass('active');
 			break;
 		case 3:
 			$('#_window_fur').removeClass('close');
 			$('#_window_fur').removeClass('hidden');
 			$('#_menu_fur').addClass('active');
+			$('#_spin_fur').addClass('active');
 			break;
 		case 4:
 			$('#_window_oil').removeClass('close');
 			$('#_window_oil').removeClass('hidden');
 			$('#_menu_oil').addClass('active');
+			$('#_spin_oil').addClass('active');
 			break;
 		case 5:
 			$('#_window_video').removeClass('close');
@@ -186,7 +196,7 @@ function openMenu(i){
 		case 6:
 			$('#_window_info').removeClass('close');
 			$('#_window_info').removeClass('hidden');			
-			$('#_menu_info').addClass('active');
+			$('#_spin_info').addClass('active');
 			break;
 	}
 }
@@ -203,6 +213,7 @@ function closeMenu(i){
 		case 0:
 			$('#_window_sound').addClass('hidden');
 			$('#_menu_sound').removeClass('active');
+			$('#_spin_sound').removeClass('active');
 			setTimeout(function(){
 				$('#_window_sound').addClass('close');
 			},300);			
@@ -211,6 +222,7 @@ function closeMenu(i){
 			$('#_video_air').each(function () { this.pause() });
 			$('#_window_air').addClass('hidden');
 			$('#_menu_air').removeClass('active');
+			$('#_spin_air').removeClass('active');
 			setTimeout(function(){
 				$('#_window_air').addClass('close');
 			},300);			
@@ -218,6 +230,7 @@ function closeMenu(i){
 		case 2:
 			$('#_window_wheel').addClass('hidden');
 			$('#_menu_wheel').removeClass('active');
+			$('#_spin_wheel').removeClass('active');
 			setTimeout(function(){
 				$('#_window_wheel').addClass('close');
 			},300);			
@@ -226,6 +239,7 @@ function closeMenu(i){
 			$('#_video_fur').each(function () { this.pause() });
 			$('#_window_fur').addClass('hidden');
 			$('#_menu_fur').removeClass('active');
+			$('#_spin_fur').removeClass('active');
 			setTimeout(function(){
 				$('#_window_fur').addClass('close');
 			},300);			
@@ -233,6 +247,7 @@ function closeMenu(i){
 		case 4:
 			$('#_window_oil').addClass('hidden');
 			$('#_menu_oil').removeClass('active');
+			$('#_spin_oil').removeClass('active');
 			setTimeout(function(){
 				$('#_window_oil').addClass('close');
 			},300);			
@@ -247,7 +262,7 @@ function closeMenu(i){
 			break;
 		case 6:
 			$('#_window_info').addClass('hidden');
-			$('#_menu_info').removeClass('active');
+			$('#_spin_info').removeClass('active');
 			setTimeout(function(){
 				$('#_window_info').addClass('close');
 			},300);			

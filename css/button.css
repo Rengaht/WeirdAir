@@ -41,3 +41,48 @@
 #_menu_video.active{
 	background-image: url("../img/menu/video_focus.png");
 }
+
+.spinInfo{
+	background-image: url("../img/spin/info_2.png");
+}
+.spinMenu.active>.spinInfo{
+	background-image: url("../img/spin/info.png");
+}	
+.spinArrow{
+	background-image: url("../img/spin/arrow_2.png");
+}
+.spinMenu.active>.spinArrow{
+	background-image: url("../img/spin/arrow.png");
+}	
+.spinLens{
+	background-image: url("../img/spin/lens_2.png");
+}
+.spinMenu.active>.spinLens{
+	background-image: url("../img/spin/lens.png");
+}	
+
+#_spin_info{
+	top:90px;
+	left:40%;
+}
+#_spin_sound{
+	top:120px;
+	left:40%;
+}
+#_spin_air{
+	top:250px;
+	left:40%;
+}
+#_spin_wheel{
+	top:300px;
+	left:40%;
+}
+#_spin_fur{
+	top:20px;
+	right:40%;
+}
+
+#_spin_oil{
+	top:300px;
+	right:40%;
+}
