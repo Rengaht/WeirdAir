@@ -38,11 +38,11 @@
 		
 		<div class="spinMenu" id="_spin_info">
 			<div class="spinIcon spinInfo" onClick="onMenuClick(6)"></div>
-			<div class="spinLine"></div>
-			<div class="spinCircle"></div>
+			<!-- <div class="spinLine"></div>
+			<div class="spinCircle"></div> -->
 		</div>
 
-		<div class="spinMenu" id="_spin_sound">
+		<div class="spinMenu left" id="_spin_sound">
 			<div class="spinIcon spinLens" onClick="onMenuClick(0)"></div>
 			<div class="spinLine"></div>
 			<div class="spinCircle"></div>
@@ -54,13 +54,13 @@
 			<div class="spinCircle"></div>
 		</div>
 		
-		<div class="spinMenu"id="_spin_wheel">
+		<div class="spinMenu left"id="_spin_wheel">
 			<div class="spinIcon spinLens" onClick="onMenuClick(2)"></div>
 			<div class="spinLine"></div>
 			<div class="spinCircle"></div>
 		</div>
 		
-		<div class="spinMenu left" id="_spin_fur">
+		<div class="spinMenu" id="_spin_fur">
 			<div class="spinIcon spinArrow" onClick="onMenuClick(3)"></div>
 			<div class="spinLine"></div>
 			<div class="spinCircle"></div>
@@ -72,8 +72,6 @@
 			<div class="spinCircle"></div>
 		</div>
 		
-		
-		<div id="_left_window">		
 		<div id="_window_info" class="window windowCenter">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/master.png"/>
@@ -92,7 +90,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="_window_wheel" class="window close">
+		<div id="_window_wheel" class="window windowCenter close">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/wheel.png"/>
 				<div class="titleText titleTextFunction">
@@ -118,7 +116,7 @@
 				<span class="deco vdeco"></span>
 			</div>
 		</div>
-		<div id="_window_fur" class="window close">
+		<div id="_window_fur" class="window windowCenter close">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/fur.png"/>
 				<div class="titleText titleTextFunction">
@@ -127,9 +125,10 @@
 				<div class="closeButton" onClick="onCloseClick(3)"></div>
 			</div>
 			<div class="windowImage">				
-				<video id="_video_fur" controls>
+				<!-- <video id="_video_fur" controls>
 					<source src="video/fur.mp4" type="video/mp4">
-				</video>
+				</video> -->
+				<img src="video/fur.gif"/>
 				<span class="deco sdeco"></span>
 				<span class="deco sdeco"></span>
 				<span class="deco sdeco"></span>
@@ -172,13 +171,8 @@
 				<span class="deco vdeco"></span>
 			</div>
 		</div>
-	
-		</div>
 
-		<div id="_right_window">
-
-		
-		<div id="_window_air" class="window close">
+		<div id="_window_air" class="window windowCenter close">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/air.png"/>
 				<div class="titleText titleTextFunction">
@@ -187,9 +181,10 @@
 				<div class="closeButton" onClick="onCloseClick(1)"></div>
 			</div>
 			<div class="windowImage">				
-				<video id="_video_air" controls>
+				<!-- <video id="_video_air" controls>
 					<source src="video/air.mp4" type="video/mp4">
-				</video>
+				</video> -->
+				<img src="video/air.gif"/>
 				<span class="deco sdeco"></span>
 				<span class="deco sdeco"></span>
 				<span class="deco sdeco"></span>
@@ -206,7 +201,7 @@
 				<span class="deco vdeco"></span>
 			</div>
 		</div>
-		<div id="_window_video" class="window close">
+		<div id="_window_video" class="window windowCenter close">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/video.png"/>
 				<div class="titleText titleTextFunction">
@@ -262,7 +257,7 @@
 			</div>
 		</div>		
 		
-		</div>
+		
 	</div>
 	<div id="_header">
 		<img src="img/title.png" id="_title"></img>
@@ -294,7 +289,7 @@
 	</div>
 
 	<div id="_loading">
-		Loading...
+		<img src="video/intro.gif" class="center"/>
 	</div>
 	
 </body>

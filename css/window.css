@@ -1,4 +1,4 @@
-#_left_window{
+.windowLeft{
 	position: absolute;
 	top:85px;
 	bottom: 85px;
@@ -6,7 +6,7 @@
 	width:30%;
 	max-width: 350px;
 }
-#_right_window{
+.windowRight{
 	position: absolute;	
 	top:85px;
 	bottom: 85px;
@@ -17,7 +17,7 @@
 
 .window{	
 	position: absolute;
-	/*top:85px;*/
+	top:85px;
 	max-width:350px;
 	opacity: 1;
 	transition: .2s ease-out;
@@ -30,7 +30,6 @@
 	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);
 }
-
 .windowHeader{
 	margin-bottom:6px;
 }
@@ -158,27 +157,3 @@
     right: 0;
     bottom: -7px;    
 }
-
-
-/*#_window_info{
-	left:115px;
-}
-#_window_wheel{
-	left:115px;
-}
-#_window_fur{
-	left:115px;
-}
-#_window_sound{
-	left:115px;
-}
-
-#_window_air{
-	right:115px;
-}
-#_window_video{
-	right:115px;
-}
-#_window_oil{
-	right:115px;
-}*/

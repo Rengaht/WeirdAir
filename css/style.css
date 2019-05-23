@@ -104,13 +104,14 @@ body{
 	width:80px;
 	height:38px;
 	z-index: 50;
+	transition: .2s ease-out;
 }
 .spinIcon{
 	position: absolute;
 	width:38px;
 	height:38px;	
 	background-size: contain;
-	transition: .2s ease-out;
+	transition: .2s linear;
 	cursor: pointer;
 	display: inline-block;
 }
@@ -119,16 +120,16 @@ body{
 }
 .spinLine{
 	position: absolute;
-	left:38px;
+	left:36px;
 	right:11px;
 	top:18px;
-	height:0.5px;
+	height:1px;
 	background-color: white;
 	opacity: 0.85;
 	display: inline-block;
 }
 .spinMenu.left>.spinLine{
-	right:38px;
+	right:36px;
 	left:11px;
 }
 .spinCircle{
@@ -168,10 +169,15 @@ body{
 	left: 0;
 	right: 0;
 }
+#_loading>img{
+	position: relative;
+	top:35%;
+	height:30%;
+}
 
 .hidden{
 	opacity: 0;
-	transition: .2s ease-out;
+	transition: .2s linear;
 }
 .close{
 	display:none;

@@ -62,27 +62,27 @@
 }	
 
 #_spin_info{
-	top:90px;
-	left:40%;
+	top:18%;
+	left:34%;
 }
 #_spin_sound{
-	top:120px;
-	left:40%;
+	top:18%;
+	right:36%;
 }
 #_spin_air{
-	top:250px;
-	left:40%;
+	top:50%;
+	left:31%;
 }
 #_spin_wheel{
-	top:300px;
-	left:40%;
+	top:66%;
+	right:30%;
 }
 #_spin_fur{
-	top:20px;
-	right:40%;
+	top:69%;
+	left:32%;
 }
 
 #_spin_oil{
-	top:300px;
-	right:40%;
+	top:55%;
+	right:30%;
 }
