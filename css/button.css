@@ -64,10 +64,11 @@
 #_spin_info{
 	top:18%;
 	left:34%;
+	z-index: 20;
 }
 #_spin_sound{
 	top:18%;
-	right:36%;
+	left:36%;
 }
 #_spin_air{
 	top:50%;
@@ -75,11 +76,11 @@
 }
 #_spin_wheel{
 	top:66%;
-	right:30%;
+	left:30%;
 }
 #_spin_fur{
 	top:69%;
-	left:32%;
+	right:32%;
 }
 
 #_spin_oil{

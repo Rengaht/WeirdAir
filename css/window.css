@@ -16,16 +16,16 @@
 }
 
 .window{	
-	position: absolute;
-	top:85px;
-	max-width:350px;
+	position: relative;
+	/*top:85px;*/
+	/*max-width:350px;*/
 	opacity: 1;
 	transition: .2s ease-out;
 	display:block;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
 .windowCenter{
-	position: absolute;
+	/*position: absolute;*/
 	top:50%;
 	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);

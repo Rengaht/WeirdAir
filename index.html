@@ -42,7 +42,7 @@
 			<div class="spinCircle"></div> -->
 		</div>
 
-		<div class="spinMenu left" id="_spin_sound">
+		<div class="spinMenu" id="_spin_sound">
 			<div class="spinIcon spinLens" onClick="onMenuClick(0)"></div>
 			<div class="spinLine"></div>
 			<div class="spinCircle"></div>
@@ -54,13 +54,13 @@
 			<div class="spinCircle"></div>
 		</div>
 		
-		<div class="spinMenu left"id="_spin_wheel">
+		<div class="spinMenu"id="_spin_wheel">
 			<div class="spinIcon spinLens" onClick="onMenuClick(2)"></div>
 			<div class="spinLine"></div>
 			<div class="spinCircle"></div>
 		</div>
 		
-		<div class="spinMenu" id="_spin_fur">
+		<div class="spinMenu left" id="_spin_fur">
 			<div class="spinIcon spinArrow" onClick="onMenuClick(3)"></div>
 			<div class="spinLine"></div>
 			<div class="spinCircle"></div>
@@ -71,8 +71,10 @@
 			<div class="spinLine"></div>
 			<div class="spinCircle"></div>
 		</div>
-		
-		<div id="_window_info" class="window windowCenter">
+		</div> <!-- _model -->
+
+		<div id="_left_window">
+		<div id="_window_info" class="window windowCenter close">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/master.png"/>
 				<div class="titleText">
@@ -116,35 +118,7 @@
 				<span class="deco vdeco"></span>
 			</div>
 		</div>
-		<div id="_window_fur" class="window windowCenter close">
-			<div class="windowHeader">
-				<img class="titleIcon" src="img/window/fur.png"/>
-				<div class="titleText titleTextFunction">
-					<div class="center">超紓壓湖水藍絨毛</div>
-				</div>
-				<div class="closeButton" onClick="onCloseClick(3)"></div>
-			</div>
-			<div class="windowImage">				
-				<!-- <video id="_video_fur" controls>
-					<source src="video/fur.mp4" type="video/mp4">
-				</video> -->
-				<img src="video/fur.gif"/>
-				<span class="deco sdeco"></span>
-				<span class="deco sdeco"></span>
-				<span class="deco sdeco"></span>
-				<span class="deco sdeco"></span>
-			</div>
-			<div class="windowContent windowContentFunction">			
-				<div class="windowText Bold">
-					關於湖水藍絨毛				
-				</div>
-				<div class="windowText">
-					空氣怪的外觀具有蓬鬆柔軟的湖水藍絨毛，除了吸睛外，更具有超抒壓療癒力，摸一把的輕柔帶你飄飄入雲端。
-				</div>
-				<span class="deco vdeco"></span>
-				<span class="deco vdeco"></span>
-			</div>
-		</div>
+		
 		<div id="_window_sound" class="window close windowCenter">
 			<div class="windowHeader">
 				<img class="titleIcon" src="img/window/sound.png"/>
@@ -196,6 +170,39 @@
 				</div>
 				<div class="windowText">				
 					在緊張的氣氛中化解尷尬的特殊功能，空氣炮將香氣精油罐中的客制化香氛進行燃燒氣化，並在炮筒中使氣體加壓噴出，形成超自然煙圈，從空氣怪橘色的小嘴噴出，如同甜甜圈般可愛迷人，讓人好想吃一口。
+				</div>
+				<span class="deco vdeco"></span>
+				<span class="deco vdeco"></span>
+			</div>
+		</div>
+
+		</div> <!-- _left_window -->
+
+		<div id="_right_window">
+		<div id="_window_fur" class="window windowCenter close">
+			<div class="windowHeader">
+				<img class="titleIcon" src="img/window/fur.png"/>
+				<div class="titleText titleTextFunction">
+					<div class="center">超紓壓湖水藍絨毛</div>
+				</div>
+				<div class="closeButton" onClick="onCloseClick(3)"></div>
+			</div>
+			<div class="windowImage">				
+				<!-- <video id="_video_fur" controls>
+					<source src="video/fur.mp4" type="video/mp4">
+				</video> -->
+				<img src="video/fur.gif"/>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+				<span class="deco sdeco"></span>
+			</div>
+			<div class="windowContent windowContentFunction">			
+				<div class="windowText Bold">
+					關於湖水藍絨毛				
+				</div>
+				<div class="windowText">
+					空氣怪的外觀具有蓬鬆柔軟的湖水藍絨毛，除了吸睛外，更具有超抒壓療癒力，摸一把的輕柔帶你飄飄入雲端。
 				</div>
 				<span class="deco vdeco"></span>
 				<span class="deco vdeco"></span>
@@ -256,28 +263,31 @@
 				<span class="deco vdeco"></span>
 			</div>
 		</div>		
+		</div> <!-- _right_window -->
 		
-		
-	</div>
+	
 	<div id="_header">
 		<img src="img/title.png" id="_title"></img>
+		
 		<a href="https://www.facebook.com/merlin.mustache" target="_blank">
 			<div class="HeaderButton" id="_facebook"></div>
 		</a>
 		<a href="https://mmlab.com.tw" target="_blank">
 			<div class="HeaderButton" id="_mmlab"></div>
 		</a>
+		<div id="_sound_button" class="HeaderButton" onClick="toggleSound()"></div>
+		
 		
 	</div>
 	<div id="_menu">
-		<div class="center">
+		<!-- <div class="center"> -->
 			<div class="menuIcon" id="_menu_sound" onClick="onMenuClick(0)"></div>
 			<div class="menuIcon" id="_menu_air" onClick="onMenuClick(1)"></div>
 			<div class="menuIcon" id="_menu_wheel" onClick="onMenuClick(2)"></div>
 			<div class="menuIcon" id="_menu_fur" onClick="onMenuClick(3)"></div>
 			<div class="menuIcon" id="_menu_oil" onClick="onMenuClick(4)"></div>
 			<div class="menuIcon" id="_menu_video" onClick="onMenuClick(5)"></div>
-		</div>
+		<!-- </div> -->
 	</div>
 	
 
@@ -287,10 +297,23 @@
 		<div class="footerLeft">MMLAB</div>
 		<div class="footerRight">mmlab.com.tw</div>
 	</div>
-
+	<div id="_hint" onClick="onHintClick()">
+		<div id="_hint_text">請點擊按鈕觀看介紹</div>
+		<img id="_hint_img" src="img/hand.gif" class="center"/>
+	</div>
 	<div id="_loading">
 		<img src="video/intro.gif" class="center"/>
 	</div>
 	
+	<audio id="_sound_bgm">
+  		<source src="sound/Dreams_Electric.mp3" type="audio/mpeg">
+  	</audio>
+  	<audio id="_sound_open">
+  		<source src="sound/open.mp3" type="audio/mpeg">
+  	</audio>
+  	<audio id="_sound_close">
+  		<source src="sound/close.mp3" type="audio/mpeg">
+  	</audio>
+
 </body>
 </html>

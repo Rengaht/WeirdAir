@@ -178,8 +178,10 @@ function getInnerLayout(mode, inner, outer) {
     width = Math.floor(width);
     height = Math.floor(height);
     // position in center
-    layout.width = width;
-    layout.height = height;
+    // layout.width = width;
+    // layout.height = height;
+    layout.width = '100%';
+    layout.height = '100%';
     layout.top = Math.floor((outer.height - height) / 2);
     layout.left = Math.floor((outer.width - width) / 2);
     layout.right = layout.left;
@@ -621,8 +623,10 @@ function applyLayout(data) {
     var layout = getInnerLayout(data.sizeMode, getInnerSize(data), size);
     // apply layout on target
     data.target.css({
-        width: size.width,
-        height: size.height,
+        // width: size.width,
+        // height: size.height,
+        width: '100%',
+        height: '100%',
         position: 'relative',
         overflow: 'hidden'
     });
@@ -634,6 +638,8 @@ function applyLayout(data) {
         return;
     }
     // apply layout on canvas
+
+    layout.height='';
     data.canvas.css(layout).hide();
     // apply pixel ratio on canvas
     data.canvasRatio = data.canvasRatio || pixelRatio(data.context);

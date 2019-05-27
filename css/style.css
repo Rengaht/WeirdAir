@@ -31,7 +31,7 @@ body{
 	width:26px;
 	height:26px;
 	display: inline-block;
-
+	margin-left:15px;
 }
 #_title{
 	height:28px;
@@ -39,11 +39,19 @@ body{
 #_mmlab{
 	background-image: url("../img/mm.png");
 	background-size: contain;	
-	margin-right:30px;
+
 }
 #_facebook{
 	background-image: url("../img/fb.png");
 	background-size: contain;
+}
+#_sound_button{
+	background-image: url("../img/sound_on.png");
+	background-size: contain;	
+}
+#_sound_button.off{
+	background-image: url("../img/sound_off.png");
+	background-size: contain;	
 }
 
 #_footer{
@@ -70,10 +78,10 @@ body{
 #_menu{
 	position: absolute;
 	bottom:85px;
-	left:0px;
-	right: 0px;
+	left:30%;
+	right: 30%;
+	height:85px;
 }
-
 
 #_model{
 	/*background: red;*/
@@ -83,17 +91,41 @@ body{
 	left:0px;
 	right: 0px
 }
+#_left_window{
+	width: 20%;
+	max-width: 470px;
+
+    position: absolute;
+    top: 85px;
+    bottom: 165px;
+    left: 0px;
+    padding:60px;
+}
+#_right_window{
+	width: 20%;
+	max-width: 470px;
+
+    position: absolute;
+    top: 85px;
+    bottom: 165px;
+    right: 0px;
+    padding:60px;
+}
+
 
 .menuIcon{
-	width:65px;
-	height:80px;	
+
+	position:relative;
+	width:16%;
+	height:100%;	
 	
-	margin-left: 29px;
-	margin-right: 29px;
+	/*margin-left: 29px;
+	margin-right: 29px;*/
 
 	display: inline-block;
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
 
 	transition: .2s ease-out;
 	cursor: pointer;
@@ -103,7 +135,7 @@ body{
 	position: absolute;
 	width:80px;
 	height:38px;
-	z-index: 50;
+	z-index: 10;
 	transition: .2s ease-out;
 }
 .spinIcon{
@@ -183,3 +215,32 @@ body{
 	display:none;
 }
 
+#_hint{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 12;
+}
+#_hint_text{
+	position: absolute;
+	top:15%;
+	left:34%;
+	color:white;
+
+	opacity: 0.85;
+  	font-family: 'Noto Sans TC';
+  	font-size: 14px;
+  	font-weight: 500;
+  	text-align: center;
+}
+#_hint_img{
+	
+	position: absolute;
+	top:20%;
+	left:36%;
+
+	width:80px;
+}
