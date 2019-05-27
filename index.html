@@ -11,14 +11,13 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
-	<script>
-		var mobile_detect=new MobileDetect(window.navigator.userAgent);
-    	let _mobile=(mobile_detect.mobile()!=null);
-    </script>
+
 	
 	<link rel="stylesheet" type="text/css" href="css/window.css">
 	<link rel="stylesheet" type="text/css" href="css/button.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
 	<script src="src/jquery-3.3.1.min.js"> </script>
 	
@@ -28,7 +27,10 @@
 </head>
 
 <body>
-	
+	<script>
+		var mobile_detect=new MobileDetect(window.navigator.userAgent);
+		let _mobile=(mobile_detect.mobile()!=null) || $(this).width()<768;
+    </script>
 	
 	
 	<div id="_model">		
@@ -269,6 +271,9 @@
 	<div id="_header">
 		<img src="img/title.png" id="_title"></img>
 		
+		
+		<div id="_ham_button" class="HeaderButton hidden" onClick="toggleMenu()"></div>
+		
 		<a href="https://www.facebook.com/merlin.mustache" target="_blank">
 			<div class="HeaderButton" id="_facebook"></div>
 		</a>
@@ -276,7 +281,7 @@
 			<div class="HeaderButton" id="_mmlab"></div>
 		</a>
 		<div id="_sound_button" class="HeaderButton" onClick="toggleSound()"></div>
-		
+
 		
 	</div>
 	<div id="_menu">

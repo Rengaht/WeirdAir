@@ -2,11 +2,16 @@ body{
 	background:black;
 	color:white;
 	border:0;
-	padding: 40px 60px 40px 60px;
+	padding: 20px 20px 20px 20px;
 	margin:0;
 
 	font-family: 'Lato', sans-serif;
 	font-family: 'Noto Sans TC', sans-serif;
+}
+@media only screen and (min-width: 768px){
+	body{
+		padding: 40px 60px 40px 60px;
+	}
 }
 
 .center{
@@ -17,55 +22,73 @@ body{
 
 
 #_header{
-	/*margin-top:40px;
-	margin-right: 60px;
-	margin-left: 60px;*/
 	position: absolute;
-	left: 60px;
-	right: 60px;
-
+	left: 20px;
+	right: 20px;
 }
 
 .HeaderButton{
 	float:right;
-	width:26px;
-	height:26px;
+	width:40px;
+	height:40px;
 	display: inline-block;
 	margin-left:15px;
-}
-#_title{
-	height:28px;
-}
-#_mmlab{
-	background-image: url("../img/mm.png");
 	background-size: contain;	
 
+}
+@media only screen and (min-width: 768px){
+	#_header{
+		position: absolute;
+		left: 60px;
+		right: 60px;
+	}
+	.HeaderButton{
+		width:26px;
+		height:26px;
+	}
+}
+
+#_mmlab{
+	background-image: url("../img/mm.png");	
 }
 #_facebook{
 	background-image: url("../img/fb.png");
-	background-size: contain;
 }
 #_sound_button{
 	background-image: url("../img/sound_on.png");
-	background-size: contain;	
 }
 #_sound_button.off{
 	background-image: url("../img/sound_off.png");
-	background-size: contain;	
 }
 
-#_footer{
-	position: absolute;
-	/*width:100%;*/
-	bottom: 40px;
-	right: 60px;
-	left: 60px;
-
-	opacity: 0.85;
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
-  	font-weight: 900;
+#_ham_button{
+	background-image: url("../img/menu.png");
 }
+
+#_title,#_footer{
+	display: none;
+}
+@media only screen and (min-width: 768px){
+
+	#_title{
+		display: inline-block;
+		height:28px;
+	}
+	#_footer{
+		display: block;
+		position: absolute;
+		/*width:100%;*/
+		bottom: 40px;
+		right: 60px;
+		left: 60px;
+
+		opacity: 0.85;
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+	  	font-weight: 900;
+	}
+}
+
 .footerLeft{
 	float:left;
 	/*margin-left: 60px;*/
@@ -77,10 +100,17 @@ body{
 
 #_menu{
 	position: absolute;
-	bottom:85px;
-	left:30%;
-	right: 30%;
-	height:85px;
+	bottom:20px;
+	left:20px;
+	right: 20px;
+	height:50px;
+}
+@media only screen and (min-width: 768px){
+	#_menu{
+		left:30%;
+		right: 30%;
+		bottom:85px;
+	}
 }
 
 #_model{
@@ -90,26 +120,6 @@ body{
 	bottom: 0px;
 	left:0px;
 	right: 0px
-}
-#_left_window{
-	width: 20%;
-	max-width: 470px;
-
-    position: absolute;
-    top: 85px;
-    bottom: 165px;
-    left: 0px;
-    padding:60px;
-}
-#_right_window{
-	width: 20%;
-	max-width: 470px;
-
-    position: absolute;
-    top: 85px;
-    bottom: 165px;
-    right: 0px;
-    padding:60px;
 }
 
 
@@ -132,12 +142,19 @@ body{
 }
 
 .spinMenu{
+	display: none;
 	position: absolute;
 	width:80px;
 	height:38px;
 	z-index: 10;
 	transition: .2s ease-out;
 }
+@media only screen and (min-width: 768px){
+	.spinMenu{
+		display: block;
+	}
+}
+
 .spinIcon{
 	position: absolute;
 	width:38px;
@@ -179,6 +196,7 @@ body{
 	right:'';
 	left:0;
 }
+
 
 .backImage{
 	position: absolute;

@@ -640,6 +640,8 @@ function applyLayout(data) {
     // apply layout on canvas
 
     layout.height='';
+    layout.width='';
+
     data.canvas.css(layout).hide();
     // apply pixel ratio on canvas
     data.canvasRatio = data.canvasRatio || pixelRatio(data.context);
